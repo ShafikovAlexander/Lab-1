@@ -7,59 +7,61 @@
     <meta name="author" content="Шафиков Александр">
     <meta name="description" content="Это учебный сайт по дисциплине Web-Программирование.
 В первом задании мы учимся работать с html">
-    <link rel="shortcut icon" href="images\favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <title>Визитка</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+          integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-<header>
-    <img src="images\logo1.png">
-    <h1> Визитка </h1>
-    <nav>
-        <ul>
-            <li>Раздел 1</li>
-            <li>Раздел 2</li>
-            <li>Раздел 3</li>
+<header class="header">
+    <h1 class="header_title"><a class="header_title__link" href="index.html">Визитка</a> </h1>
+    <nav class="header__nav">
+        <ul class="header__list">
+            <li class="header__item"><a href="page_2.html" class="header__link">Table</a></li>
+            <li class="header__item"><a href="#" class="header__link">Script</a></li>
+            <li class="header__item"><a href="#" class="header__link">Smth</a></li>
         </ul>
     </nav>
-
+    <a href="#" class="header__logo"></a>
 
 </header>
-<main>
-    <section><h3>Мои таланты:</h3>
-    <ol>
-        <li>Откадывать всё на последний момент</li>
-        <li>Читать и смотреть гайды</li>
-        <li>Делать всё за одну ночь</li>
-        <li>Выкручиваться из сложных ситуаций</li>
-    </ol>
-    </section>
-    <aside>Кстати, это задание я делаю достаточно поздно
-        именно из-за моих талантов</aside>
-    <section><h3>Мои увлечения:</h3>
-    <ul>
-        <li>Программирование</li>
-        <li>Спортивная мафия</li>
-        <li>Книги Ремарка</li>
-        <li>DnD</li>
-        <li>Настольные игры</li>
-        <li>Детективные фильмы</li>
-    </ul>
-    </section>
-    <h3>Обо мне</h3>
-    <article>Меня зовут Саша, мне 20 лет. <br>
-        Я учусь в ИТМО на факультете информационных систем и программирования. <br>
-        Нахожусь в активном поиске себя. Изучаю аналитику данных и ищу свою первую(нормальную) работу.
-        <br>Прохожу отбор на стажировку в BioCad.
-        В свободное от учёбы время люблю поиграть в спортивную мафию или провести
-    время с близкими людьми</article>
-    <br>
-    <p><b>Формула моего успеха:</b></p>
-    <pre>
-        E=mc<sup>2</sup>
-Energy = milk * coffee<sup>2</sup>
-    </pre>
-    <article>Вот вам красивая картинка для вдохновления:</article>
-    <pre>
+<main class="main">
+    <section>
+        <div class="about-me">
+            <div class="about-me__item my-talents">
+                <h3 class="about-me_title">Мои таланты:</h3>
+                <ol>
+                    <li>Откадывать всё на последний момент</li>
+                    <li>Читать и смотреть гайды</li>
+                    <li>Делать всё за одну ночь</li>
+                    <li>Выкручиваться из сложных ситуаций</li>
+                </ol>
+            </div>
+            <div class="about-me__item my-hobbies">
+                <h3 class="about-me_title">Мои увлечения:</h3>
+                <ul>
+                    <li>Программирование</li>
+                    <li>Спортивная мафия</li>
+                    <li>Книги Ремарка</li>
+                    <li>DnD</li>
+                    <li>Настольные игры</li>
+                    <li>Детективные фильмы</li>
+                </ul>
+            </div>
+            <div class="about-me__item about-me-about">
+                <h3 class="about-me_title">Обо мне</h3>
+                <p>Меня зовут Саша, мне 20 лет. Я учусь в ИТМО на факультете информационных систем и программирования.
+                    Нахожусь в активном поиске себя. Изучаю аналитику данных и ищу свою первую(нормальную) работу.
+                    Прохожу отбор на стажировку в BioCad.
+                    В свободное от учёбы время люблю поиграть в спортивную мафию или провести
+                    время с близкими людьми
+                </p>
+            </div>
+            <div class="goose">
+                <p>Вот вам красивая картинка для вдохновления:</p>
+                <pre>
         ЗАПУСКАЕМ
 ░ГУСЯ░▄▀▀▀▄░РАБОТЯГИ░░
 ▄███▀░◐░░░▌░░░░░░░
@@ -75,21 +77,36 @@ Energy = milk * coffee<sup>2</sup>
 ░░░░░░░░░░░▌▌░▌▌░░░░░
 ░░░░░░░░░▄▄▌▌▄▌▌░░░░░
     </pre>
-    <article>А вот моя лучшая программа:</article>
-    <code>
-        print("Hello World!")
-    </code>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="formula">
+            <div class="formula__item">
+                <p><b>Формула моего успеха:</b></p>
+                <p>E=mc<sup>2</sup></p>
+                <p>Energy = milk * coffee<sup>2</sup></p>
+            </div>
+        </div>
+    </section>
 </main>
 <footer>
-    <blockquote>
-        <p>Не тот волк, кто волк, а тот кто волк</p>
-        <cite> &copy; <sub>Волк</sub></cite>
-    </blockquote>
-    <p>Контактная информация</p>
-    <ul>
-        <li>Телефон: <a href="tel:+79630213681">+79630213681</a></li>
-        <li>Github: <a href="https://github.com/ShafikovAlexander">ShafikovAlexander</a> </li>
-    </ul>
+    <div class="footer">
+        <div class="footer__item">
+            <blockquote>
+                <p>Не тот волк, кто волк, а тот кто волк</p>
+                <cite> &copy; <sub>Волк</sub></cite>
+            </blockquote>
+        </div>
+        <div class="footer__item">
+            <p>Контактная информация</p>
+            <ul class="footer__list">
+                <li class="footer-item">Телефон: <a href="tel:+79630213681">+79630213681</a></li>
+                <li class="footer-item">Github: <a href="https://github.com/ShafikovAlexander">ShafikovAlexander</a></li>
+            </ul>
+        </div>
+    </div>
 </footer>
 </body>
 </html>
