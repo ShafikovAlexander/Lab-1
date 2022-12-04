@@ -28,6 +28,11 @@ body{
     font-size: 20px;
 }
 
+.header_title__link{
+    text-decoration: none;
+    color: black
+}
+
 
 .header__link{
     position: relative;
