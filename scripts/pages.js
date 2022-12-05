@@ -1,7 +1,7 @@
 const paths = Object.freeze({
-    Page2: { file: 'Lab-1/page_2.html', link: 'page2'},
-    Page3: { file: 'Lab-1/page_3.html', link: 'page3'},
-    Page4: { file: 'Lab-1/page_4.html', link: 'page4'}
+    Page2: { file: 'page_2.html', link: 'page2'},
+    Page3: { file: 'page_3.html', link: 'page3'},
+    Page4: { file: 'page_4.html', link: 'page4'}
 });
 
 (() => {
