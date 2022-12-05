@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблица</title>
+    <meta name="keywords" content="Визитка, Web-Программирование,
+    html, учебный, проект, ИТМО, задание, будет, лучше">
+    <meta name="author" content="Шафиков Александр">
+    <meta name="description" content="Это учебный сайт по дисциплине Web-Программирование.
+В первом задании мы учимся работать с html">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+          integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="styles/table_style.css">
+</head>
+<body>
+<header class="header">
+    <h1 class="header_title"><a class="header_title__link" href="index.html">Визитка</a> </h1>
+    <nav class="header__nav">
+        <ul class="header__list">
+            <li class="header__item"><a data-link="page2" href="page_2.html" class="header__link header__link_normal">Table</a></li>
+            <li class="header__item"><a data-link="page3" href="page_3.html" class="header__link header__link_normal">Script</a></li>
+            <li class="header__item"><a data-link="page4" href="page_4.html" class="header__link header__link_normal">Smth</a></li>
+        </ul>
+    </nav>
+    <a href="index.html" class="header__logo"></a>
+
+</header>
+<main>
+    <table class="table">
+        <thead class="table__header">
+        <tr>
+            <td>Table</td>
+        </tr>
+        </thead>
+        <tbody class="table__body">
+        <tr>
+            <td>row 1 col 1</td>
+            <td>row 1 col 2</td>
+            <td>row 1 col 3</td>
+            <td>row 1 col 4</td>
+        </tr>
+        <tr>
+            <td>row 2 col 1</td>
+            <td>row 2 col 2</td>
+            <td>row 2 col 3</td>
+            <td>row 2 col 4</td>
+        </tr>
+        <tr>
+            <td>row 3 col 1</td>
+            <td>row 3 col 2</td>
+            <td>row 3 col 3</td>
+            <td>row 3 col 4</td>
+        </tr>
+        <tr>
+            <td>row 4 col 1</td>
+            <td>row 4 col 2</td>
+            <td>row 4 col 3</td>
+            <td>row 4 col 4</td>
+        </tr>
+        </tbody>
+    </table>
+    <p id="time-load"></p>
+</main>
+<footer></footer>
+<script src="scripts/pages.js"></script>
+<script src="scripts/stats.js"></script>
+</body>
+</html>
