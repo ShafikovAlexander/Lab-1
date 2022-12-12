@@ -13,6 +13,8 @@
           integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="styles/table_style.css">
+    <link rel="stylesheet" href="styles/table.css">
+    <script src="scripts/stats.js"></script>
 </head>
 <body>
 <header class="header">
@@ -27,9 +29,29 @@
     <a href="index.html" class="header__logo"></a>
 
 </header>
+<div class="container">
+    <h2 class="section__header">Расписание</h2>
+    <form class="schedule__form" id="schedule-form">
+        <label>
+            <input maxlength="50" placeholder="Напишите сюда что-нибудь" name="text" type="text"
+                   class="schedule__input"/>
+            <select name="type" class="schedule__select">
+                <option value="Понедельник" selected>Понедельник</option>
+                <option value="Вторник">Вторник</option>
+                <option value="Среда">Среда</option>
+                <option value="Четверг">Четверг</option>
+                <option value="Пятница">Пятница</option>
+                <option value="Суббота">Суббота</option>
+                <option value="Воскресенье">Воскресенье</option>
+            </select>
+        </label>
+        <button type="submit" class="schedule__button">Сохранить</button>
+    </form>
+    <div class="schedule__list" id="schedule-list"></div>
+</div>
 <p id="time-load"></p>
 <footer></footer>
 <script src="scripts/pages.js"></script>
-<script src="scripts/stats.js"></script>
+<script type="text/javascript" src="scripts/table.js"></script>
 </body>
 </html>
