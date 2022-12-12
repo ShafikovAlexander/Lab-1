@@ -46,7 +46,14 @@ document.addEventListener('DOMContentLoaded', () => {
             return
         }
 
+        if(values.text.match(/\s{1,20}/) != null)
+        {
+            alert('Поле не может быть пустым')
+            return
+        }
+
         addTaskToMarkup(values);
+        e.target.reset();
     });
 
     dataContainer.addEventListener('DOMSubtreeModified', () => {
