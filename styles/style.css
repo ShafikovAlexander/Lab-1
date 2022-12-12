@@ -210,3 +210,33 @@ body{
     }
 
 }
+
+@media (max-width: 680px) {
+
+
+    .header__list{
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .header__link{
+        padding: 14px;
+        margin: 10px;
+    }
+
+    .about-me{
+        font-size: 12px;
+    }
+
+    .footer__item{
+        font-size: 12px;
+    }
+
+    .footer-item{
+        font-size: 12px;
+    }
+
+    .formula__item{
+        margin: 50px 0 50px;
+    }
+}
