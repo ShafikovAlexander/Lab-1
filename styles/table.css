@@ -1,0 +1,17 @@
+.section__header, .schedule__form{
+    margin-left: 20px;
+}
+.schedule__list{
+    margin-left: 20px;
+    display: flex;
+    gap: 20px;
+}
+.schedule__item{
+    display: flex;
+    margin: 20px 0 0 0;
+    background-color: white;
+}
+
+header a{
+
+}
