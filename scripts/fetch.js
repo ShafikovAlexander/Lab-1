@@ -1,5 +1,5 @@
 const fetchComments = async (page = 1) => {
-    const response = await fetch(`https://jsonplaceholder.typicode.com/posts/${page}/comments`);
+    const response = await fetch(`https://jsonplaceholder.typicode.com/posts/1/comments`);
     return await response.json();
 }
 
